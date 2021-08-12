@@ -1,0 +1,27 @@
+spring:
+  profiles.active: prod
+---
+spring: 
+  profiles: dev
+  property: this is a dev env
+logging:
+ level:
+   org.springframework: INFO
+   org.springframework.web.servlet: DEBUG
+basic: 
+   value: true
+   message: Dynamic Message YAML
+   number: 100  
+---   
+spring: 
+  profiles: prod
+  property: this is a production env 
+logging:
+ level:
+   org.springframework: INFO
+   org.springframework.web.servlet: DEBUG
+basic: 
+   value: true
+   message: Dynamic Message YAML
+   number: 100  
+  
